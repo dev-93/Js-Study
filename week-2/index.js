@@ -29,41 +29,63 @@
 
 // 배열 탐색
 
-const board = [
-    [0, 0, 0, 0, 0],
-    [0, 0, 1, 0, 3],
-    [0, 2, 5, 0, 1],
-    [4, 2, 4, 4, 2],
-    [3, 5, 1, 3, 1],
-];
+// const board = [
+//     [0, 0, 0, 0, 0],
+//     [0, 0, 1, 0, 3],
+//     [0, 2, 5, 0, 1],
+//     [4, 2, 4, 4, 2],
+//     [3, 5, 1, 3, 1],
+// ];
 
-const moves = [1, 5, 3, 5, 1, 2, 1, 4];
+// const moves = [1, 5, 3, 5, 1, 2, 1, 4];
 
-function solution(board, moves) {
-    let result = 0;
-    let size = board.length;
-    let num = 0;
-    let pocket = [];
-    moves.forEach((move) => {
-        let cnt = 0;
-        while (true) {
-            if (board[cnt][move - 1] !== 0) {
-                // 바구니에 인형이 있는데 잡은 인형과 같으면 터트린다
-                if (pocket.length !== 0 && pocket[pocket.length - 1] === board[cnt][move - 1]) {
-                    pocket.pop();
-                    result += 2;
-                } else {
-                    // 그렇지 않다면 잡아서 옮긴다
-                    pocket.push(board[cnt][move - 1]);
-                }
-                board[cnt][move - 1] = 0;
-                break;
-            }
-            cnt++;
-            if (cnt === size) break;
-        }
-    });
-    return result;
+// function solution(board, moves) {
+//     let result = 0;
+//     let size = board.length;
+//     let num = 0;
+//     let pocket = [];
+//     moves.forEach((move) => {
+//         let cnt = 0;
+//         while (true) {
+//             if (board[cnt][move - 1] !== 0) {
+// 바구니에 인형이 있는데 잡은 인형과 같으면 터트린다
+//                 if (pocket.length !== 0 && pocket[pocket.length - 1] === board[cnt][move - 1]) {
+//                     pocket.pop();
+//                     result += 2;
+//                 } else {
+// 그렇지 않다면 잡아서 옮긴다
+//                     pocket.push(board[cnt][move - 1]);
+//                 }
+//                 board[cnt][move - 1] = 0;
+//                 break;
+//             }
+//             cnt++;
+//             if (cnt === size) break;
+//         }
+//     });
+//     return result;
+// }
+
+// console.log(solution(board, moves));
+
+// 3.예산
+// 배열 d: 부서별로 신청한 금액이 들어있는 와
+// budget: 예산, 이 매개변수로 주어질 때,
+// 최대 몇 개의 부서에 물품을 지원할 수 있는지 return 하도록 solution 함수를 완성해주세요.
+
+// key-point: 최대한 많은 부서의 물품을 구매해 줄 수 있도록
+const d = [1, 3, 2, 5, 4];
+const budget = 9;
+
+// const d = [2,2,3,3];
+// const budget = 10;
+
+function solution(d, budget) {
+    const answer = 0;
+    return d.sort((a, b) => a - b).reduce((acc, cur) => console.log(acc + cur));
 }
 
-console.log(solution(board, moves));
+// console.log(solution(d, budget));
+solution(d, budget);
+
+
