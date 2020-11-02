@@ -81,11 +81,12 @@ const budget = 9;
 // const budget = 10;
 
 function solution(d, budget) {
-    const answer = 0;
-    return d.sort((a, b) => a - b).reduce((acc, cur) => console.log(acc + cur));
+    d.sort((a, b) => a - b);
+    while (d.reduce((acc, cur) => (acc + cur), 0) > budget) d.pop();
+    return d.length;
 }
 
-// console.log(solution(d, budget));
-solution(d, budget);
+console.log(solution(d, budget));
+// solution(d, budget);
 
 
