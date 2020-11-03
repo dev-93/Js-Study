@@ -5,20 +5,17 @@
 // 각 원소 중 앞자리가 제일 큰게 제일 앞으로, 앞자리가 같다면, 더 큰게 앞으로,
 // 정답이 너무 클 수 있으니 문자열로 바꾸어 return 합니다.
 
-let numbers = [6, 10, 2];
-6210
+// let numbers = [6, 10, 2];
+// 6210
 
-// let numbers= [3, 30, 34, 5, 9];
+let numbers= [3, 30, 34, 5, 9];
 // 9534330
 
 function solution(numbers) {
-    const result = numbers.sort().reverse().join('');
-
-    // 만약 앞자리 수가 똑같을때 비교한다면, 30과 3 을 비교할때, 30의 0이 3보다 커야만 한다.
-    return result;
+    numbers.sort((a, b) => (b.toString() + a.toString()) - (a.toString() + b.toString()));
+    return numbers.join("") == 0 ? "0" : numbers.join("");
+    // numbers 배열이 0으로만 구성되어 있을 경우 '0'만 출력
 }
-
-
 
 // solution(numbers);
 console.log(solution(numbers));
