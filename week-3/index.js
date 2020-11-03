@@ -14,6 +14,7 @@ let numbers = [6, 10, 2];
 function solution(numbers) {
     const result = numbers.sort().reverse().join('');
 
+    // 만약 앞자리 수가 똑같을때 비교한다면, 30과 3 을 비교할때, 30의 0이 3보다 커야만 한다.
     return result;
 }
 
