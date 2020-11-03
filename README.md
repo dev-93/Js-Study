@@ -8,3 +8,7 @@
   - [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
 
   - [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
+### 3주차 목표:
+  - [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860?language=javascript)
+  - [가장 큰수](https://programmers.co.kr/learn/courses/30/lessons/42746?language=javascript)
+  - [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579?language=javascript)
