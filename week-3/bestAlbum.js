@@ -5,7 +5,7 @@
 // 한 장르 당 최대 2개까지만 뽑아서, 플레이 목록을 만들 수 있다.
 // 플레이 목록은 고유 번호로 하는 리스트이다.
 
-function solution(genres, plays) {
+(function solution(genres, plays) {
     const songs = genres.map((genre, index) => {
         return {
             no: index,
@@ -15,7 +15,7 @@ function solution(genres, plays) {
     });
 
     const genrePlayCount = [];
-    
+
     songs.forEach(song => {
         const thisGenre = genrePlayCount.find(genrePlay => genrePlay.genre === song.genre);
         if (!thisGenre) {
@@ -28,17 +28,17 @@ function solution(genres, plays) {
     });
 
     genrePlayCount.sort((a, b) => b.totalPlayCount - a.totalPlayCount);
-
     const answer = [];
     
     genrePlayCount.forEach(genrePlay => {
         const thisGenreSongs = songs.filter(song => genrePlay.genre === song.genre);
         thisGenreSongs.sort((a, b) => b.playCount - a.playCount);
         answer.push(thisGenreSongs[0].no);
+
         if (thisGenreSongs.length > 1) {
             answer.push(thisGenreSongs[1].no);
         }
     });
 
     return answer;
-}
+})(genres=['classic', 'pop', 'classic', 'classic', 'pop'], plays=[500, 600, 150, 800, 2500])
