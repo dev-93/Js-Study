@@ -12,3 +12,7 @@
   - [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860?language=javascript)
   - [가장 큰수](https://programmers.co.kr/learn/courses/30/lessons/42746?language=javascript)
   - [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579?language=javascript)
+### 4주차 목표:
+  - [디스크 컨트롤러](https://programmers.co.kr/learn/courses/30/lessons/42627?language=javascript)
+  - [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587?language=javascript)
+  - [자유]
