@@ -1,25 +1,28 @@
 // 프린터 
 
-// 현재 대기목록에 있는 문서의 중요도가 순서대로 담긴 배열 priorities
-// 내가 인쇄를 요청한 문서가 현재 대기목록의 어떤 위치에 있는지를 알려주는 location
-
-// 인쇄 대기목록의 가장 앞에 있는 문서(J)를 대기목록에서 꺼냅니다.
-// 나머지 인쇄 대기목록에서 J보다 중요도가 높은 문서가 한 개라도 존재하면 J를 대기목록의 가장 마지막에 넣습니다.
-// 그렇지 않으면 J를 인쇄합니다.
-// 내가 인쇄를 요청한 문서가 몇 번째로 인쇄되는지 return
-
-// 예를 들어, 4개의 문서(A, B, C, D)가 순서대로 인쇄 대기목록에 있고 중요도가 2 1 3 2 라면 C D A B 순으로 인쇄하게 됩니다.
-
-// 내가 인쇄를 요청한 문서가 몇 번째로 인쇄되는지 알고 싶습니다. 위의 예에서 C는 1번째로, A는 3번째로 인쇄됩니다.
-
 (function solution(priorities, loc) {
-    var answer = 0;
-    console.log(priorities);
-    console.log(loc);
+    const answer = 0;
+
+    const docList = [];
+    
+    // docList에 내용을 추가한다.
+    priorities.map((list,index) => {
+        docList.push({
+            id:index,
+            prioritie: list,
+        })
+    });
+
+    console.log(docList);
+
+    // docList에 있는 prioritie의 내용을 내림차순으로 정렬한다.
+    docList.map((list) => console.log(list.prioritie));
+
+    console.log(docList);
 
     return answer;
-})(priorities=[2,1,3,2], loc=2);
-// })(priorities=[1,1,9,1,1,1], loc=0);
+})(priorities=[2,1,3,2], loc=2);  //return 1
+// })(priorities=[1,1,9,1,1,1], loc=0); // return 5
 
 
 
