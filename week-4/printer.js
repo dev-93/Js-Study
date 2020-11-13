@@ -13,12 +13,8 @@
         })
     });
 
-    console.log(docList);
-
     // docList에 있는 prioritie의 내용을 내림차순으로 정렬한다.
     docList.map((list) => console.log(list.prioritie));
-
-    console.log(docList);
 
     return answer;
 })(priorities=[2,1,3,2], loc=2);  //return 1
