@@ -27,7 +27,7 @@ function solution(jobs) {
         else { // queue에 있을 경우
             let minIndex = 0;
             for(let i = 1; i < queue.length; i ++) {
-                if (queue[minIndex][1] > queue[i][1]]) {
+                if (queue[minIndex][1] > queue[i][1]) {
                     minIndex = i; // queue 중에 소요 시간이 가장 작은 값을 할 것입니다.
                 }
             };
