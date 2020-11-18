@@ -16,3 +16,6 @@
   - [디스크 컨트롤러](https://programmers.co.kr/learn/courses/30/lessons/42627?language=javascript)
   - [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587?language=javascript)
   - [자유]
+### 5주차 목표:
+  - [자동완성](https://programmers.co.kr/learn/courses/30/lessons/17685)
+  - [위장](https://programmers.co.kr/learn/courses/30/lessons/42578?language=javascript)
