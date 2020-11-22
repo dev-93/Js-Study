@@ -19,3 +19,4 @@
 ### 5주차 목표:
   - [자동완성](https://programmers.co.kr/learn/courses/30/lessons/17685)
   - [위장](https://programmers.co.kr/learn/courses/30/lessons/42578?language=javascript)
+  - [k번째 수] (https://programmers.co.kr/learn/courses/30/lessons/42748?language=javascript)
