@@ -24,7 +24,6 @@ function solution(words) {
     })
 
     // 예외처리는 words에 go gone gonz guild 가 있을때, gone과 gonz를 구분하려면 4글자를 쳐야함
-    console.log(answer);
     return answer;
 };
 
