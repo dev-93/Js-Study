@@ -1,11 +1,17 @@
 const clothes = [["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
 
 function solution(clothes) {
-    const answer = [];
-    const arrayToObject = clothes.map((list) => Object.assign({},list));
-    console.log(arrayToObject);
+    let answer = 1;
+    const obj = {};
+    for(let arr of clothes) {
+        obj[arr[1]] = (obj[arr[1]] || 0) + 1;
+    }
 
-    return answer;
+    for(let key in obj) {
+        answer *= (obj[key]+1);
+    }
+
+    return answer - 1;
 };
 
 solution(clothes);
