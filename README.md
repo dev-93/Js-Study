@@ -19,3 +19,5 @@
 ### 5주차 목표:
   - [자동완성](https://programmers.co.kr/learn/courses/30/lessons/17685)
   - [k번째 수](https://programmers.co.kr/learn/courses/30/lessons/42748?language=javascript)
+### 6주차 목표:
+  - [섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861?language=javascript)
