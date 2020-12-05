@@ -1,7 +1,13 @@
 (function solution(s) {
-    var answer = 0;
+    for(let i=0;i<s.length -1;i++) {
 
-    console.log(s);
-    return answer;
+        if(s[i] === s[i+1]) {
+            s = s.substr(0, i) + s.substr(i + 2);
+            i -= 2;
+        };
+        console.log(s);
+    };
+    return !s ? 1 : 0;
+
 })(s = 'baabaa');
 
