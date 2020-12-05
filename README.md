@@ -24,4 +24,4 @@
   - [자유]
 ### 7주차 목표:
   - [2x n 타일링](https://programmers.co.kr/learn/courses/30/lessons/12900?language=javascript)
-  
+  - [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973?language=javascript)
