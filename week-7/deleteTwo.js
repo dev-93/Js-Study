@@ -1,13 +1,12 @@
 (function solution(s) {
-    for(let i=0;i<s.length -1;i++) {
+    const stack = [];
 
-        if(s[i] === s[i+1]) {
-            s = s.substr(0, i) + s.substr(i + 2);
-            i -= 2;
-        };
-        console.log(s);
-    };
-    return !s ? 1 : 0;
+    for(let i = 0 ; i < s.length; i++ ){
+        if( !stack.length || stack[stack.length-1] !== s[i] ) stack.push(s[i]);
+        // stack이 비어있거나, 스택에 마지막에 있는 char가 현재 index와 같지 않다면 stack에 현재 index의 char를 Push한다.
+        // stack이 비어있지 않은데, 스택의 마지막 char가 현재의 Index와 같다면 pop()을 한다.
+            else stack.pop();
+    }
 
+    return stack.length ? 0 : 1;
 })(s = 'baabaa');
-
